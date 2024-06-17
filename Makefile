@@ -6,3 +6,8 @@ main: clean
 
 clean:
 	rm -rf main
+
+sync:
+	git add .
+	git commit -m "Sync"
+	git push origin main

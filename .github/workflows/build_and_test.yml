@@ -1,3 +1,7 @@
 name: Build and Test
+
 on:
   push
+
+jobs:
+  setup-dependencies
