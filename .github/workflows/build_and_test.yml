@@ -5,7 +5,7 @@ on:
 
 jobs:
   setup-dependencies:
-    name: "Setup Dependencies"
+    name: "Build & Test"
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
@@ -13,8 +13,4 @@ jobs:
           submodules: true
       - run: sudo apt update
       - run: sudo apt install -y cmake g++
-  build:
-    name: "Build Executable"
-    needs: setup-dependencies
-    steps:
       - run: make
