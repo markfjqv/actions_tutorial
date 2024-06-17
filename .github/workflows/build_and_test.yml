@@ -4,4 +4,6 @@ on:
   push
 
 jobs:
-  setup-dependencies
+  setup-dependencies:
+    name: "Setup Dependencies"
+    runs-on: ubuntu-24.04
