@@ -11,3 +11,7 @@ sync:
 	git add .
 	git commit -m "Sync"
 	git push origin main
+
+setup_deps:
+	sudo apt update
+	sudo apt install -y cmake g++

@@ -1,7 +1,4 @@
-jobs:
-  setup-dependencies:
-    name: "Build & Test"
-    runs-on: ubuntu-24.04
-    steps:
-      - run: sudo apt update
-      - run: sudo apt install -y cmake g++
+runs:
+  using: composite
+  steps:
+    - run: make setup_deps
