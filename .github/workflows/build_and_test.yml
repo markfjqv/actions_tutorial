@@ -8,9 +8,5 @@ jobs:
     name: "Build & Test"
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
-        with:
-          submodules: true
-      - run: sudo apt update
-      - run: sudo apt install -y cmake g++
+      - uses: ./.github/actions/setup_deps.yml
       - run: make
